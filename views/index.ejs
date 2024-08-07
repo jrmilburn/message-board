@@ -7,14 +7,17 @@
         <div class="message-board">
 
             <ul>
-                <% messages.forEach((message) => { %>
+                <% messages.forEach((message, index) => { %>
                     <li>
                         <h3><%= message.user %></h3>
                         <p><%= message.text %></p>
                         <p><%= message.added %></p>
+                        <a href="/message/<%= index %>">Open</a>
                     </li>
                 <% }); %>
             </ul>
+
+            <a href="/new">New Message</a>
 
         </div>
 
