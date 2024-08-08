@@ -9,7 +9,7 @@ app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
 app.use("/new", newRouter);
 
-const PORT = 3000;
+const port = process.env.PORT || 3000;
 
 const messages = [
     {
@@ -64,4 +64,4 @@ app.get('/message/:index', (req, res) => {
 
 })
 
-app.listen(PORT, () => console.log('app started'));
+app.listen(port, () => console.log('app started'));
