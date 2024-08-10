@@ -9,7 +9,7 @@ app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
 app.use("/new", newRouter);
 
-const port = process.env.PORT || 3000;
+const port = process.env.APP_PORT || 3000;
 
 app.get('/', (req, res) => {
 
