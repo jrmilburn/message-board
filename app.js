@@ -11,29 +11,6 @@ app.use("/new", newRouter);
 
 const port = process.env.PORT || 3000;
 
-const messages = [
-    {
-      text: "Bro doin?",
-      user: "Dylan",
-      added: new Date()
-    },
-    {
-      text: "Just codin",
-      user: "Joe",
-      added: new Date()
-    },
-    {
-        text: "You?",
-        user: "Joe",
-        added: new Date()
-    },
-    {
-        text: "Calling a coder",
-        user: "Dylan",
-        added: new Date()
-    },
-  ];
-
 app.get('/', (req, res) => {
 
     res.render('index', {title: "Mini Messageboard", messages: messages});
