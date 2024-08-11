@@ -8,6 +8,5 @@ newRouter.get('/', (req, res) => {
 
 });
 
-
 module.exports = newRouter;
 

@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS messages (
 
 const insertMessageSQL = `
 INSERT INTO messages (name, message, added)
-VALUES ($1, $2, $3);
+VALUES ($1);
 `;
 
 async function main() {
